@@ -1,0 +1,42 @@
+#include<iostream>
+using namespace std;
+main()
+{
+	int opcion,n1,n2,resultado;
+	cout<<" Ingrese el primer numero de la operacion \n";
+cin>> n1;
+	cout<<" Ingrese el segundo numero de la operacion\n";
+cin>> n2;
+	cout<<" Ingrese una de las opciones del menu \n";
+	
+cout<<"        para ingresar a  suma          digite el numero 1  \n";
+cout<<"        para ingresar a  resta         digite el numero 2  \n";
+cout<<"        para ingresar a  multiplicacion digite el numero 3 \n";
+cout<<"        para ingresar a  division      digite el numero 4  \n";
+cout<<"        para ingresar a  cinco         digite el numero 5  \n";
+
+	cin>>opcion;
+	switch(opcion)
+	{
+		case 1:cout<<"estas en  opcion suma";
+		resultado=n1+n2;
+		cout<<"el resultado es suma"<<resultado;
+
+		break;
+		
+		case 2:cout<<"estas en  opcion resta";
+		resultado=n1-n2;
+		cout<<"el resultado es resta"<<resultado;
+		break;
+		case 3:cout<<"estas en opsion multiplicacion";
+		resultado=n1*n2;
+		cout<<"el resultado es multiplicación"<<resultado;
+		break;
+		case 4:cout<<"estas en opsion divicion ";
+		resultado=n1/n2;
+		cout<<"el resultado es divicion"<<resultado;
+		break;
+	
+		default: cout<<"no estas en nada";
+	    break;
+	}
